@@ -38,11 +38,13 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   
   unless hash[key] 
-    return hash[key]=1 
+     hash[key]=1 
+     return hash
   
           
   else  
       return hash[key]+=1 
+       hash
      
             
     
